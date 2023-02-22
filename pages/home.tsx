@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <div className="page">
       <Row gutter={[12, 12]}>
-        <Col xs={24} lg={12}>
+        <Col xs={24} md={12}>
           <WordCard/>
         </Col>
-        <Col xs={24} lg={12}>
+        <Col xs={24} md={12}>
           <WordCard/>
         </Col>
       </Row>
