@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import WordCard from "@/components/card/WordCard";
+import React from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,7 +10,17 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <WordCard/>
+        <WordCard
+          word={"BOOK"}
+          meaning={"Đặt chổ"}
+          description={"to arrange to have something at a certain time"}
+          meme={"https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"}
+          phrase={"Book a table = đặt bàn"}
+          sentences={[
+            "He book a table at a sushi restaurant",
+            "Anh ấy đặt bàn tại một nhà hàng sushi",
+          ]}
+        />
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
