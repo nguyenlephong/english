@@ -1,5 +1,5 @@
 import React from 'react';
-import WordCard from "@/components/card/WordCard";
+import WordCard from "@/app/components/card/WordCard";
 import {Col, Row} from "antd";
 
 export default function Home() {
