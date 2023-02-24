@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {Badge, Image} from "antd";
 import "./WordCard.style.scss";
@@ -37,7 +38,7 @@ const WordCard = (props: WordCardPropType) => {
             })}
           </div>
         </div>
-      </Badge.Ribbon>
+       </Badge.Ribbon>
   );
 };
 

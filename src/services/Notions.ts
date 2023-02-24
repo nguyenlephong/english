@@ -1,4 +1,4 @@
-import {APP} from "@/app/configuration/Application.config";
+import {APP} from "@/configuration/Application.config";
 
 const options = {
   method: 'POST',
@@ -36,7 +36,7 @@ const transformPayload = (response: any) => {
   return outcome
 }
 
-fetch('https://api.notion.com/v1/databases/eb209d55146a43a29c7590e14863b79e/query', options)
-  .then(response => response.json())
-  .then(response => transformPayload(response))
-  .catch(err => console.error(err));
+// fetch('https://api.notion.com/v1/databases/eb209d55146a43a29c7590e14863b79e/query', options)
+//   .then(response => response.json())
+//   .then(response => transformPayload(response))
+//   .catch(err => console.error(err));
