@@ -6,14 +6,14 @@ export const metadata = {
   description: 'Study English from word every day',
 }
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutPropType = {
   children: React.ReactNode
-}) {
+}
+
+export default function RootLayout(props: RootLayoutPropType) {
   return (
     <html lang="en">
-      <body>{children}</body>
+    <body>{props.children}</body>
     </html>
   )
 }

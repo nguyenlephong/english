@@ -3,6 +3,7 @@ import React from 'react';
 import WordCard from "@/components/card/WordCard";
 import {Col, Row} from "antd";
 import TabBar from "@/components/tab-bar/TabBar";
+import {ROUTE_NAME} from "@/configuration/Application.config";
 
 export default function Page() {
   return (
@@ -90,8 +91,8 @@ export default function Page() {
           </Col>
         </Row>
       </div>
-      
-      <TabBar/>
+  
+      <TabBar active={ROUTE_NAME.WORDS}/>
     </div>
   )
 }
