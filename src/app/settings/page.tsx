@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import TabBar from "@/components/tab-bar/TabBar";
 import {ROUTE_NAME} from "@/configuration/Application.config";
 

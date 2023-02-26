@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Badge, TabBar} from 'antd-mobile';
 import {File, Gear, House, Student} from "phosphor-react"
 import {useRouter} from 'next/navigation'
@@ -41,6 +41,10 @@ const TabBarCustomization = (props: TabBarPropType) => {
   ]
   
   const [activeKey, setActiveKey] = useState(props.active)
+  
+  useEffect(() => {
+    setActiveKey(activeKey)
+  }, [props.active])
   
   return (
     <div>

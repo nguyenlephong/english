@@ -13,7 +13,7 @@ type RootLayoutPropType = {
 export default function RootLayout(props: RootLayoutPropType) {
   return (
     <html lang="en">
-    <body>{props.children}</body>
+      <body>{props.children}</body>
     </html>
   )
 }
