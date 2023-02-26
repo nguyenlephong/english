@@ -1,8 +1,9 @@
 'use client';
 import React, {useState} from 'react';
 import {Badge, TabBar} from 'antd-mobile';
-import {File, Gear, House, Notebook, Student} from "phosphor-react"
+import {File, Gear, House, Student} from "phosphor-react"
 import {useRouter} from 'next/navigation'
+import {ROUTE_NAME} from "@/configuration/Application.config";
 
 type TabBarPropType = {
   active: string;
@@ -18,23 +19,22 @@ const TabBarCustomization = (props: TabBarPropType) => {
       badge: Badge.dot,
     },
     {
-      key: 'words',
+      key: ROUTE_NAME.WORDS,
       title: 'words',
-      url: '/words',
+      url: `/${ROUTE_NAME.WORDS}`,
       icon: <File size={32}/>,
       badge: '5',
     },
     {
-      key: 'study',
-      title: 'Study',
-      url: '/words',
-      icon: (active: boolean) =>
-        active ? <Student size={32}/> : <Notebook size={32}/>,
-      badge: '99+',
+      key: ROUTE_NAME.LEARNING,
+      title: 'Learning',
+      url: `/${ROUTE_NAME.LEARNING}`,
+      icon: <Student size={32}/>,
+      badge: '1',
     },
     {
-      key: 'settings',
-      url: '/words',
+      key: ROUTE_NAME.SETTINGS,
+      url: `/${ROUTE_NAME.SETTINGS}`,
       title: 'Settings',
       icon: <Gear size={32}/>,
     },

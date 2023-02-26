@@ -4,5 +4,7 @@ export const APP = {
 
 export const ROUTE_NAME = {
   HOME: 'home',
-  WORDS: 'words'
+  WORDS: 'words',
+  LEARNING: 'learning',
+  SETTINGS: 'settings'
 }
