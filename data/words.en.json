@@ -1,0 +1,36 @@
+[
+  {
+    "id": "strategy",
+    "en": "strategy",
+    "phrase": "",
+    "description": "",
+    "sentences": [
+      "Must have a {{strategy}} for it."
+    ],
+    "question": [
+      {
+        "sentence": "Must have a {{strategy}} for it.",
+        "suggestion": [
+          "strategy",
+          "plan",
+          "work"
+        ]
+      }
+    ],
+    "status": 0,
+    "field": [
+      "work"
+    ],
+    "type": "noun",
+    "list_of_synonym": [],
+    "feedbacks": [
+      {
+        "id": "f1",
+        "title": "",
+        "content": ""
+      }
+    ],
+    "image": "",
+    "url": ""
+  }
+]

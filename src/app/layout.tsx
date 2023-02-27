@@ -1,10 +1,9 @@
+'use client';
 import React from "react";
 import './globals.css'
+import {QueryClient, QueryClientProvider} from 'react-query';
 
-export const metadata = {
-  title: 'English App',
-  description: 'Study English from word every day',
-}
+const queryClient = new QueryClient();
 
 type RootLayoutPropType = {
   children: React.ReactNode
@@ -13,7 +12,9 @@ type RootLayoutPropType = {
 export default function RootLayout(props: RootLayoutPropType) {
   return (
     <html lang="en">
+    <QueryClientProvider client={queryClient}>
       <body>{props.children}</body>
+    </QueryClientProvider>
     </html>
   )
 }
