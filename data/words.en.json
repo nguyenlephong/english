@@ -2,13 +2,32 @@
   {
     "id": "strategy",
     "en": "strategy",
-    "phrase": "",
+    "phrases": [
+      {
+        "id": "01",
+        "phrase": "strategy {{for}}",
+        "suggestion": [
+          "for",
+          "with",
+          "to"
+        ]
+      }
+    ],
     "description": "",
     "sentences": [
-      "Must have a {{strategy}} for it."
+      {
+        "id": "1",
+        "sentence": "Must have a {{strategy}} for it.",
+        "suggestion": [
+          "strategy",
+          "plan",
+          "work"
+        ]
+      }
     ],
     "question": [
       {
+        "id": "1",
         "sentence": "Must have a {{strategy}} for it.",
         "suggestion": [
           "strategy",
@@ -30,7 +49,9 @@
         "content": ""
       }
     ],
-    "image": "",
+    "image": [
+      ""
+    ],
     "url": ""
   }
 ]
