@@ -1,7 +1,9 @@
 import {cookies} from "next/headers";
 import {NextResponse} from "next/server";
+import logger from "@/services/Logger.service";
 
 export async function GET(request: Request, {params}: any) {
+  logger.info("Call api: %s %s", request.method, request.url)
   const cookieStore = cookies();
   const token = cookieStore.get('token');
   const language = cookieStore.get('language');
@@ -9,7 +11,6 @@ export async function GET(request: Request, {params}: any) {
   response.cookies.set('language', `${language}`);
   
   const wordId = params.id;
-  
   const responseData = {
     data: [
       {
