@@ -35,6 +35,15 @@
           "plan",
           "work"
         ]
+      },
+      {
+        "id": "2",
+        "sentence": "Please help me, find out a {{strategy}} for it.",
+        "suggestion": [
+          "strategy",
+          "plan",
+          "work"
+        ]
       }
     ],
     "status": 0,

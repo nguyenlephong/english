@@ -7,10 +7,7 @@ import {ROUTE_NAME} from "@/configuration/Application.config";
 import {useQuery} from "react-query";
 import {getWords} from "@/services/Words.service";
 import {useRouter} from "next/navigation";
-
-type WordType = {
-  [key: string]: any;
-}
+import {WordType} from "@/services/AppInterface";
 
 export default function Page() {
   const router = useRouter()
@@ -36,7 +33,6 @@ export default function Page() {
                   ]}
                 />
               </Col>
-            
             )
           })}
         
