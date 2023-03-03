@@ -6,7 +6,7 @@ import {useRouter} from 'next/navigation'
 import {ROUTE_NAME} from "@/configuration/Application.config";
 
 type TabBarPropType = {
-  active: string;
+  active?: string;
 }
 const TabBarCustomization = (props: TabBarPropType) => {
   const router = useRouter()

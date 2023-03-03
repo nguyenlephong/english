@@ -1,9 +1,10 @@
 'use client';
 import React from 'react';
-import {Badge, Image} from "antd";
+import {Badge, Button, Image, Space} from "antd";
 import "./WordCard.style.scss";
 import {PhraseType, SentenceType, WordType} from "@/services/AppInterface";
 import {removeBracketCharacter} from "@/shared/utils";
+import {Lightbulb, Student} from "phosphor-react";
 
 type WordCardPropType = {
   wordData: WordType;
@@ -52,7 +53,25 @@ const WordCard = (props: WordCardPropType) => {
             )
           })}
         </div>
+        <div className={"action-bar"}>
+          <Space wrap={true} size={12}>
+            <Button
+              icon={<Lightbulb size={16}/>}
+              size={"large"}
+              type="primary"
+              shape="circle">
+            </Button>
+            <Button
+              icon={<Student size={16}/>}
+              size={"large"}
+              type="primary" shape="circle">
+            </Button>
+    
+          </Space>
+  
+        </div>
       </div>
+
     </Badge.Ribbon>
   );
 };
