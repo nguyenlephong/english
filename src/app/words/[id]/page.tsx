@@ -13,6 +13,7 @@ type WordType = {
 export default function Page({params}: any) {
   const {data: dataWordDetail} = useQuery('word_by_id', () => getWordById(params.id));
   const word = dataWordDetail?.data?.data || []
+  
   return (
     <div className="page">
       <div className={"page-body"}>

@@ -1,0 +1,45 @@
+.question-card-container {
+  height: 100%;
+}
+
+.word-learning-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  .question-text {
+    padding: 24px;
+    word-break: break-word;
+
+    &.correct {
+      color: green;
+    }
+  }
+
+  .question-check {
+    color: #a91010;;
+  }
+}
+
+.answer-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  padding: 12px;
+
+  .word-to-answer {
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid #d6d6d7;
+    font-size: 24px;
+    margin-bottom: 12px;
+
+    &.active {
+      border: 1px solid green;
+    }
+  }
+}

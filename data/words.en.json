@@ -7,7 +7,7 @@
       {
         "id": "01",
         "phrase": "strategy {{for}}",
-        "suggestion": [
+        "suggestions": [
           "for",
           "with",
           "to"
@@ -19,7 +19,7 @@
       {
         "id": "1",
         "sentence": "Must have a {{strategy}} for it.",
-        "suggestion": [
+        "suggestions": [
           "strategy",
           "plan",
           "work"
@@ -30,7 +30,7 @@
       {
         "id": "1",
         "sentence": "Must have a {{strategy}} for it.",
-        "suggestion": [
+        "suggestions": [
           "strategy",
           "plan",
           "work"
@@ -39,7 +39,7 @@
       {
         "id": "2",
         "sentence": "Please help me, find out a {{strategy}} for it.",
-        "suggestion": [
+        "suggestions": [
           "strategy",
           "plan",
           "work"

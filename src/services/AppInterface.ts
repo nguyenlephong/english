@@ -3,6 +3,7 @@ export type WordType = {
 }
 
 export type QuestionType = {
+  id: string;
   sentence: string;
   suggestions: string[];
 }

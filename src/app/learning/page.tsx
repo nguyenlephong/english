@@ -5,6 +5,7 @@ import {ROUTE_NAME} from "@/configuration/Application.config";
 import {useQuery} from "react-query";
 import {getWords} from "@/services/Words.service";
 import QuestionCard from "@/components/card/QuestionCard";
+import "./Learning.style.scss";
 
 export default function Learning() {
   const {data: wordsResp, isLoading, error} = useQuery('words', getWords);
