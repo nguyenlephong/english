@@ -21,16 +21,8 @@ export default function Page() {
             return (
               <Col key={w.id} xs={24} md={12}>
                 <WordCard
+                  wordData={w}
                   onClick={() => router.push(`/${ROUTE_NAME.WORDS}/${w.id}`)}
-                  word={w.word}
-                  meaning={w.meaning}
-                  description={"to arrange to have something at a certain time"}
-                  meme={"https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"}
-                  phrase={"Book a table = đặt bàn"}
-                  sentences={[
-                    "He book a table at a sushi restaurant",
-                    "Anh ấy đặt bàn tại một nhà hàng sushi",
-                  ]}
                 />
               </Col>
             )

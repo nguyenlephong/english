@@ -3,6 +3,7 @@
     "id": "strategy",
     "word": "strategy",
     "meaning": "Chiến lược",
+    "ipa": "ˈstrætɪdʒi",
     "phrases": [
       {
         "id": "01",
@@ -14,7 +15,7 @@
         ]
       }
     ],
-    "description": "",
+    "description": "Must have a strategy for it.",
     "sentences": [
       {
         "id": "1",
@@ -43,6 +44,81 @@
           "strategy",
           "plan",
           "work"
+        ]
+      }
+    ],
+    "status": 0,
+    "field": [
+      "work"
+    ],
+    "type": "noun",
+    "list_of_synonym": [],
+    "feedbacks": [
+      {
+        "id": "f1",
+        "title": "",
+        "content": ""
+      }
+    ],
+    "image": [
+      "https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"
+    ],
+    "url": ""
+  },
+  {
+    "id": "step",
+    "word": "step",
+    "meaning": "Bước",
+    "ipa": "/step/",
+    "phrases": [
+      {
+        "id": "01",
+        "phrase": "take a {{step}} back",
+        "suggestions": [
+          "step",
+          "day",
+          "rest"
+        ]
+      },
+      {
+        "id": "01",
+        "phrase": "Next {{step}} to implement it?",
+        "suggestions": [
+          "action",
+          "step",
+          "day"
+        ]
+      }
+    ],
+    "description": "updating...",
+    "sentences": [
+      {
+        "id": "1",
+        "sentence": "Please take a {{step}} back and give me some space",
+        "suggestions": [
+          "plan",
+          "step",
+          "breath"
+        ]
+      }
+    ],
+    "question": [
+      {
+        "id": "1",
+        "sentence": "Please take a {{step}} back and give me some space",
+        "suggestions": [
+          "day",
+          "plan",
+          "step"
+        ]
+      },
+      {
+        "id": "2",
+        "sentence": "Next {{step}}",
+        "suggestions": [
+          "day",
+          "plan",
+          "step"
         ]
       }
     ],
